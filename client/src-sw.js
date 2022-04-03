@@ -1,17 +1,9 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
-const {
-  StaleWhileRevalidate,
-  NetworkOnly,
-  CacheFirst,
-} = require('workbox-strategies');
-const { setDefaultHandler, registerRoute } = require('workbox-routing');
+const { warmStrategyCache } = require('workbox-recipes');
+const { StaleWhileRevalidate, CacheFirst } = require('workbox-strategies');
+const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
-
-setDefaultHandler(new NetworkOnly());
-
-offlineFallback();
 
 precacheAndRoute(self.__WB_MANIFEST);
 
