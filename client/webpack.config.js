@@ -17,7 +17,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'J.A.T.E',
+        title: 'JATE',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -26,8 +26,8 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'J.A.T.E',
-        short_name: 'J.A.T.E',
+        name: 'JATE',
+        short_name: 'JATE',
         description: 'Just Another Text Editor',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
