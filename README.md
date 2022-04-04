@@ -12,7 +12,7 @@ Try out the text editor app [_here_](https://iler-19-text-editor.herokuapp.com/)
 
 ## Screenshot
 
-![Social Network Api screenshot]
+![text editor](https://user-images.githubusercontent.com/89151536/161611507-7439a80c-f56c-4fe1-9ec8-65e8f824fe18.png)
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ Try out the text editor app [_here_](https://iler-19-text-editor.herokuapp.com/)
 
 To install dependencies, run the following:
 
-npm run install
+`npm run install`
 
 ## Usage
 
